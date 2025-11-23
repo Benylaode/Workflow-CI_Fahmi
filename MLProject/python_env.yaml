@@ -1,0 +1,10 @@
+python: 3.12
+dependencies:
+  - pandas
+  - scikit-learn
+  - mlflow
+  - prometheus-client
+  - fastapi
+  - joblib
+  - uvicorn
+  - tqdm
