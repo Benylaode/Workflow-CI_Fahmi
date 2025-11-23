@@ -21,4 +21,4 @@ jobs:
     - name: Run MLflow project
       run: |
         cd MLProject
-        mlflow run .
+        python modelling.py
