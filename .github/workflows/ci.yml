@@ -1,0 +1,29 @@
+name: MLflow-CI-Fahmi
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  training:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        activate-environment: mlflow_env
+        environment-file: MLProject/conda.yaml
+        python-version: 3.10
+
+    - name: Install MLflow
+      run: pip install mlflow
+
+    - name: Run MLflow project
+      run: |
+        cd MLProject
+        mlflow run .
