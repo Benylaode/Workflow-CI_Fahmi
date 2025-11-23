@@ -1,11 +1,15 @@
-name: mlflow_env
 channels:
   - defaults
 dependencies:
-  - python=3.9
+  - python=3.12
   - pip
   - pip:
-      - mlflow
-      - scikit-learn
       - pandas
-      - numpy
+      - scikit-learn
+      - mlflow
+      - prometheus-client
+      - fastapi
+      - joblib
+      - uvicorn
+      - prometheus-client
+      - tqdm
