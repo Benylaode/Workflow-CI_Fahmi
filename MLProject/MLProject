@@ -1,6 +1,6 @@
 name: training_project_fahmi
 
-conda_env: local
+env_manager: local
 
 entry_points:
   main:
