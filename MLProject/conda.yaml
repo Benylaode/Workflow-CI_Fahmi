@@ -1,0 +1,16 @@
+name: training_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - pandas
+      - scikit-learn
+      - mlflow
+      - prometheus-client
+      - fastapi
+      - joblib
+      - uvicorn
+      - tqdm

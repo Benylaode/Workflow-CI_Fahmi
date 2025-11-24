@@ -1,3 +1,10 @@
+name: training_project_fahmi
+
+conda_env: local
+
 entry_points:
   main:
+    command: "python modelling.py"
+
+  modelling:
     command: "python modelling.py"
