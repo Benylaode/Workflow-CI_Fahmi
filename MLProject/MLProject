@@ -1,6 +1,6 @@
 name: training_project_fahmi
 
-python_env: python_env.yaml
+env_manager: none
 
 entry_points:
   modelling:
