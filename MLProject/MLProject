@@ -3,5 +3,5 @@ name: training_project_fahmi
 python_env: python_env.yaml
 
 entry_points:
-  main:
+  modelling:
     command: "python modelling.py"
